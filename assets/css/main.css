@@ -30,6 +30,10 @@ body {
   background-image: linear-gradient(to top, #151b24, #19202b, #1d2632, #202b3a, #243141);
 }
 
+main {
+  margin: 0 2rem;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -51,7 +55,7 @@ a {
 /* header */
 header {
   position: sticky;
-  display: flex;
+  display: none;
   top: 24px;
   right: 50%;
   justify-content: center;
@@ -76,7 +80,6 @@ header nav ul {
 
 header nav ul li {
   padding: 0.5rem 1rem;
-  /* background-color: var(--black); */
   border-radius: 25px;
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1rem;
@@ -86,4 +89,89 @@ header nav ul li {
 
 header nav ul li:hover {
   background-color: var(--black);
+}
+
+/* home */
+.home__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.home__header__intro h1 {
+  margin: 0 0 0.5rem;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.home__header__intro .home__header__intro__rol {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.home__header__intro p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.home__header img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.home__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.home__footer p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--secondary-light);
+}
+
+.home__footer__contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home__footer__contact ul li {
+  padding: 0.5rem 1rem;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  border-radius: 25px;
+}
+
+.home__footer__contact ul li a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* resalt text */
+.primary-light {
+  color: var(--primary-light);
+}
+
+.secondary-light {
+  color: var(--secondary-light);
+}
+
+.tertiary {
+  color: var(--tertiary);
 }
