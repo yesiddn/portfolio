@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bai Jamjuree';
+  src: url('../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf') format('truetype');
+  font-style: bold;
+}
+
+:root {
+  --black: #151B24;
+  --white: #FFFFFF;
+  --primary: #8B3136;
+  --primary-light: rgba(166, 61, 66, 0.6);
+  --secondary: #E6CEA7;
+  --secondary-light: #D9CEC0;
+  --tertiary: #AEC59C;
+}
+
+html {
+  color: var(--white);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #151b24, #19202b, #1d2632, #202b3a, #243141);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.name {
+  color: var(--primary);
+}
