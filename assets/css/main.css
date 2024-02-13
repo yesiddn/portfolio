@@ -125,7 +125,7 @@ header nav ul li:hover {
   color: var(--white);
 }
 
-.home__header img {
+.home__header img, .about-me__item img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -168,7 +168,7 @@ header nav ul li:hover {
 }
 
 /* experience */
-.experience h2, .projects h2 {
+.experience h2, .projects h2, .about-me h2 {
   margin: 3rem 0 1rem;
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1.8rem;
@@ -176,7 +176,7 @@ header nav ul li:hover {
   color: var(--white);
 }
 
-.experience__item, .projects__item {
+.experience__item, .projects__item, .about-me__item {
   margin: 2rem 0;
 }
 
@@ -197,6 +197,41 @@ header nav ul li:hover {
   object-fit: cover;
   border-radius: 15px;
 }
+
+/* about me */
+.about-me {
+  margin-bottom: 3rem;
+}
+
+.about-me__item__content {
+  margin-bottom: 2.5rem;
+}
+
+.about-me__item__content__highlights div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 1px solid var(--white);
+}
+
+.about-me__item__content__highlights div span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+#volleyball {
+  background: url('../svg/volleyball.svg') no-repeat center/cover;
+}
+
+#book {
+  background: url('../svg/book.svg') no-repeat center/cover;
+}
+
 /* resalt text */
 .primary-light {
   color: var(--primary-light);
