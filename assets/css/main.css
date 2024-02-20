@@ -13,8 +13,8 @@
 :root {
   --black: #151B24;
   --white: #FFFFFF;
-  --primary: #b43449;
-  --primary-light: rgba(255, 123, 140, 0.7);
+  --primary: #be4f62;
+  --primary-light: rgba(255, 175, 180, 0.8);
   --secondary: #E6CEA7;
   --secondary-light: #D9CEC0;
   --tertiary: #AEC59C;
@@ -31,7 +31,10 @@ body {
 }
 
 main {
-  margin: 0 2rem;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 h1,
