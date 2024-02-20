@@ -13,8 +13,8 @@
 :root {
   --black: #151B24;
   --white: #FFFFFF;
-  --primary: #8B3136;
-  --primary-light: rgba(255, 135, 135, 0.6);
+  --primary: #b43449;
+  --primary-light: rgba(255, 123, 140, 0.7);
   --secondary: #E6CEA7;
   --secondary-light: #D9CEC0;
   --tertiary: #AEC59C;
@@ -34,7 +34,12 @@ main {
   margin: 0 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-family: 'Bai Jamjuree', sans-serif;
 }
@@ -125,7 +130,8 @@ header nav ul li:hover {
   color: var(--white);
 }
 
-.home__header img, .about-me__item img {
+.home__header img,
+.about-me__item img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -168,7 +174,9 @@ header nav ul li:hover {
 }
 
 /* experience */
-.experience h2, .projects h2, .about-me h2 {
+.experience h2,
+.projects h2,
+.about-me h2 {
   margin: 3rem 0 1rem;
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1.8rem;
@@ -176,11 +184,14 @@ header nav ul li:hover {
   color: var(--white);
 }
 
-.experience__item, .projects__item, .about-me__item {
+.experience__item,
+.projects__item,
+.about-me__item {
   margin: 2rem 0;
 }
 
-.experience__item h3, .projects__item h3{
+.experience__item h3,
+.projects__item h3 {
   margin: 1.5rem 0 1rem;
   color: var(--tertiary);
 }
@@ -203,8 +214,23 @@ header nav ul li:hover {
   margin-bottom: 3rem;
 }
 
+.about-me__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-me__item__content {
   margin-bottom: 2.5rem;
+}
+
+.about-me__item__content__highlights {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .about-me__item__content__highlights div {
@@ -212,7 +238,6 @@ header nav ul li:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 1rem 0;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   border: 1px solid var(--white);
