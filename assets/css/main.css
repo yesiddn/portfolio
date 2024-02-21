@@ -205,10 +205,43 @@ header nav ul li:hover {
   color: var(--secondary-light);
 }
 
+.projects__item__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.projects__item a,
+.projects__item__tech li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.projects__item__tech li span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
 .projects__item img {
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.projects__item a {
+  display: inline-flex;
+  margin-top: 1rem;
 }
 
 /* about me */
@@ -283,7 +316,7 @@ header nav ul li:hover {
   header {
     display: flex;
   }
-  
+
   .home__header {
     flex-direction: row;
   }
