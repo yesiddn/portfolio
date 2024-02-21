@@ -133,8 +133,7 @@ header nav ul li:hover {
   color: var(--white);
 }
 
-.home__header img,
-.about-me__item img {
+.home__header img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -222,10 +221,13 @@ header nav ul li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2.5rem;
 }
 
-.about-me__item__content {
-  margin-bottom: 2.5rem;
+.about-me__item img {
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
 }
 
 .about-me__item__content__highlights {
@@ -233,7 +235,7 @@ header nav ul li:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .about-me__item__content__highlights div {
@@ -275,4 +277,18 @@ header nav ul li:hover {
 
 .tertiary {
   color: var(--tertiary);
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+  }
+  
+  .home__header {
+    flex-direction: row;
+  }
+
+  .about-me__item {
+    flex-direction: row;
+  }
 }
