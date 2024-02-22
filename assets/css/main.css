@@ -61,8 +61,29 @@ a {
   text-decoration: none;
 }
 
-.name {
+.name-one,
+.name-two,
+.name-three {
+  display: none;
+  border-right: 2px solid;
+  white-space: nowrap;
   color: var(--primary);
+  overflow: hidden;
+}
+
+.name-one {
+  width: 5ch;
+  animation: typing 3s, blink .5s infinite step-end alternate;
+}
+
+.name-two {
+  width: 4ch;
+  animation: typing 3s, blink .5s infinite step-end alternate;
+}
+
+.name-three {
+  width: 8ch;
+  animation: typing 3s, blink .5s infinite step-end alternate;
 }
 
 /* header */
@@ -115,8 +136,11 @@ header nav ul li:hover {
 }
 
 .home__header__intro h1 {
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 1rem; */
   margin-bottom: 0.5rem;
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -134,8 +158,8 @@ header nav ul li:hover {
 }
 
 .home__header img {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
 }
 
@@ -312,6 +336,24 @@ header nav ul li:hover {
   color: var(--tertiary);
 }
 
+/* actions */
+.active {
+  display: block;
+}
+
+@keyframes typing {
+
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @media (min-width: 768px) {
   header {
     display: flex;
@@ -321,7 +363,17 @@ header nav ul li:hover {
     flex-direction: row;
   }
 
+  .home__header__intro h1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .about-me__item {
     flex-direction: row;
+  }
+
+  .active {
+    display: inline-block;
   }
 }
