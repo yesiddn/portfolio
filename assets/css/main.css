@@ -34,7 +34,7 @@ main {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem 6rem;
 }
 
 h1,
@@ -93,26 +93,22 @@ header {
   top: 24px;
   right: 50%;
   justify-content: center;
-  margin: 3rem auto;
+  margin: 3rem auto 0;
   z-index: 100;
 }
 
 header nav {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   padding: 0.5rem 2rem;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
 }
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-header nav ul li {
+header nav a {
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-family: 'Bai Jamjuree', sans-serif;
@@ -121,24 +117,28 @@ header nav ul li {
   cursor: pointer;
 }
 
-header nav ul li:hover {
+header nav a:hover {
   background-color: var(--black);
 }
 
 /* home */
+.home,
+.experience,
+.projects,
+.about-me {
+  padding-top: 6rem;
+}
+
 .home__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 3rem 0;
+  margin: 0 0 3rem;
 }
 
 .home__header__intro h1 {
-  /* display: flex; */
-  /* align-items: center; */
-  /* gap: 1rem; */
   margin-bottom: 0.5rem;
   font-size: 3rem;
   font-weight: 700;
@@ -169,7 +169,7 @@ header nav ul li:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .home__footer p {
@@ -203,7 +203,7 @@ header nav ul li:hover {
 .experience h2,
 .projects h2,
 .about-me h2 {
-  margin: 3rem 0 1rem;
+  margin: 0 0 1rem;
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
@@ -213,7 +213,7 @@ header nav ul li:hover {
 .experience__item,
 .projects__item,
 .about-me__item {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 
 .experience__item h3,
@@ -269,10 +269,6 @@ header nav ul li:hover {
 }
 
 /* about me */
-.about-me {
-  margin-bottom: 3rem;
-}
-
 .about-me__item {
   display: flex;
   flex-direction: column;
