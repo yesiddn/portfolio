@@ -34,7 +34,7 @@ main {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 2rem 6rem;
+  padding: 0 2rem 3rem;
 }
 
 h1,
@@ -313,6 +313,14 @@ header nav a:hover {
 
 #book {
   background: url('../svg/book.svg') no-repeat center/cover;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  color: var(--secondary);
 }
 
 /* resalt text */
