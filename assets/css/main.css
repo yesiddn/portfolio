@@ -72,18 +72,18 @@ a {
 }
 
 .name-one {
-  width: 5ch;
-  animation: typing 3s, blink .5s infinite step-end alternate;
+  width: 4ch;
+  animation: typing 1s, blink .5s infinite step-end alternate;
 }
 
 .name-two {
-  width: 4ch;
-  animation: typing 3s, blink .5s infinite step-end alternate;
+  width: 3.5ch;
+  animation: typing 1s steps(var(--steps)), blink .5s infinite step-end alternate;
 }
 
 .name-three {
-  width: 8ch;
-  animation: typing 3s, blink .5s infinite step-end alternate;
+  width: 7.2ch;
+  animation: typing 2s, blink .5s infinite step-end alternate;
 }
 
 /* header */
@@ -342,11 +342,10 @@ footer {
 
 /* actions */
 .active {
-  display: block;
+  display: inline-block;
 }
 
 @keyframes typing {
-
   from {
     width: 0;
   }
@@ -375,9 +374,5 @@ footer {
 
   .about-me__item {
     flex-direction: row;
-  }
-
-  .active {
-    display: inline-block;
   }
 }
