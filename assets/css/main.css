@@ -189,15 +189,25 @@ header nav a:hover {
 }
 
 .home__footer__contact ul li {
-  padding: 0.5rem 1rem;
   background-color: var(--black);
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   border-radius: 25px;
 }
 
 .home__footer__contact ul li a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.home__footer__contact ul li:hover {
+  background-color: var(--bg-btn);
+  border: 2px solid var(--border-btn);
+}
+
+.home__footer__contact ul li:hover a {
+  color: var(--black);
 }
 
 /* experience */
