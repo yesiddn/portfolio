@@ -139,7 +139,9 @@ header nav a:hover {
 }
 
 .home__header__intro h1 {
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -382,8 +384,7 @@ footer {
   }
 
   .home__header__intro h1 {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     gap: 1rem;
   }
 
