@@ -88,12 +88,9 @@ a {
 
 /* header */
 header {
-  position: sticky;
-  display: none;
-  top: 24px;
-  right: 50%;
-  justify-content: center;
-  margin: 3rem auto 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   z-index: 100;
 }
 
@@ -101,15 +98,19 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 0.5rem 2rem;
-  border-radius: 25px;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
 }
 
 header nav a {
-  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+  padding: 0.5rem;
   border-radius: 25px;
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1rem;
@@ -118,7 +119,8 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: var(--black);
+  color: var(--primary-light);
+  /*background-color: var(--black);*/
 }
 
 /* home */
@@ -375,9 +377,9 @@ footer {
 }
 
 @media (min-width: 768px) {
-  header {
-    display: flex;
-  }
+  /*header {*/
+  /*  display: flex;*/
+  /*}*/
 
   .home__header {
     flex-direction: row;
