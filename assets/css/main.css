@@ -128,7 +128,7 @@ header nav a:hover {
 .experience,
 .projects,
 .about-me {
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 .home__header {
@@ -338,7 +338,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin: 0 2rem 8rem;
   color: var(--secondary);
 }
 
