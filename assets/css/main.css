@@ -377,9 +377,32 @@ footer {
 }
 
 @media (min-width: 768px) {
-  /*header {*/
-  /*  display: flex;*/
-  /*}*/
+  header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2rem;
+    margin: 3rem auto 0;
+  }
+
+  header nav {
+    gap: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+  }
+
+  header nav a span {
+    display: none;
+  }
+
+  /* home */
+  .home,
+  .experience,
+  .projects,
+  .about-me {
+    padding-top: 7rem;
+  }
 
   .home__header {
     flex-direction: row;
