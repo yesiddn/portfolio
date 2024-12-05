@@ -352,7 +352,10 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0 2rem 8rem;
-  color: var(--secondary);
+}
+
+footer a:hover {
+  text-decoration: var(--tertiary) wavy underline;
 }
 
 /* resalt text */
