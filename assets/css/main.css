@@ -211,6 +211,7 @@ header nav a:hover {
 }
 
 .home__footer__contact ul li:hover a {
+  text-decoration: wavy underline;
   color: var(--black);
 }
 
@@ -297,6 +298,7 @@ header nav a:hover {
 .projects__item__code:hover {
   background-color: var(--bg-btn);
   border: 2px solid var(--border-btn);
+  text-decoration: wavy underline;
   color: var(--black);
 }
 
@@ -431,5 +433,9 @@ footer a:hover {
 
   .about-me__item {
     flex-direction: row;
+  }
+
+  footer {
+    margin: 0 auto 6rem;
   }
 }
